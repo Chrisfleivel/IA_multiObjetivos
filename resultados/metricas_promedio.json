@@ -1,0 +1,50 @@
+{
+  "TSP|instancias/tsp_KROAB100.TSP.TXT|SPEA": {
+    "M1_avg": 0.0,
+    "M2_avg": 0.0,
+    "M3_avg": 71883.41382464876,
+    "Error_avg": 0.0
+  },
+  "TSP|instancias/tsp_KROAB100.TSP.TXT|NSGA": {
+    "M1_avg": 0.0,
+    "M2_avg": 0.0,
+    "M3_avg": 187272.29711672317,
+    "Error_avg": 64.6
+  },
+  "TSP|instancias/tsp_KROAB100.TSP.TXT|M3AS": {
+    "M1_avg": 0.0,
+    "M2_avg": 0.0,
+    "M3_avg": 4483.552806243678,
+    "Error_avg": 1.0
+  },
+  "TSP|instancias/tsp_KROAB100.TSP.TXT|MOACS": {
+    "M1_avg": 0.6,
+    "M2_avg": 0.2,
+    "M3_avg": Infinity,
+    "Error_avg": 0.2
+  },
+  "TSP|instancias/tsp_kroac100.tsp.txt|SPEA": {
+    "M1_avg": 0.0,
+    "M2_avg": 0.0,
+    "M3_avg": 60322.19299720164,
+    "Error_avg": 0.0
+  },
+  "TSP|instancias/tsp_kroac100.tsp.txt|NSGA": {
+    "M1_avg": 0.0,
+    "M2_avg": 0.0,
+    "M3_avg": 171350.6315385331,
+    "Error_avg": 67.6
+  },
+  "TSP|instancias/tsp_kroac100.tsp.txt|M3AS": {
+    "M1_avg": 0.4,
+    "M2_avg": 0.2,
+    "M3_avg": 6480.427193034057,
+    "Error_avg": 0.2
+  },
+  "TSP|instancias/tsp_kroac100.tsp.txt|MOACS": {
+    "M1_avg": 0.0,
+    "M2_avg": 0.0,
+    "M3_avg": Infinity,
+    "Error_avg": 0.0
+  }
+}

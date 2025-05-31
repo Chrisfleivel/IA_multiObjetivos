@@ -26,11 +26,11 @@ os.makedirs(RESULTADOS_DIR, exist_ok=True)
 
 
 PROBLEMAS = {
-    'VRPTW': {
-        'clase': VRPTW,
+    'TSP': {
+        'clase': TSP,
         'instancias': [
-            "instancias/vrptw_c101.txt",
-            "instancias/vrptw_rc101.txt"
+            "instancias/tsp_KROAB100.TSP.TXT",
+            "instancias/tsp_kroac100.tsp.txt"
         ]
     }
 }
@@ -105,7 +105,9 @@ def main():
                     m2s.append(calcular_m2(frente, frente_ytrue))
                     m3s.append(calcular_m3(frente, frente_ytrue))
                     errs.append(calcular_error(frente, frente_ytrue))
-                metricas_promedio[(problema_nombre, instancia_path, algoritmo_nombre)] = {
+                clave = f"{problema_nombre}|{instancia_path}|{algoritmo_nombre}"
+
+                metricas_promedio[clave] = {
                     'M1_avg': np.mean(m1s),
                     'M2_avg': np.mean(m2s),
                     'M3_avg': np.mean(m3s),
