@@ -1,50 +1,30 @@
 {
   "TSP|instancias/tsp_KROAB100.TSP.TXT|SPEA": {
-    "M1_avg": 0.0,
-    "M2_avg": 0.0,
-    "M3_avg": 71883.41382464876,
-    "Error_avg": 0.0
+    "Spacing_avg": 473.7222039067128,
+    "Generational_Distance_avg": 33295.01620307776,
+    "M3_Convergencia_Promedio_avg": 182543.6654279573,
+    "Error_Ratio_avg": 0.0,
+    "Tiempo_Promedio_s": 29.04445309638977
   },
   "TSP|instancias/tsp_KROAB100.TSP.TXT|NSGA": {
-    "M1_avg": 0.0,
-    "M2_avg": 0.0,
-    "M3_avg": 187272.29711672317,
-    "Error_avg": 64.6
-  },
-  "TSP|instancias/tsp_KROAB100.TSP.TXT|M3AS": {
-    "M1_avg": 0.0,
-    "M2_avg": 0.0,
-    "M3_avg": 4483.552806243678,
-    "Error_avg": 1.0
-  },
-  "TSP|instancias/tsp_KROAB100.TSP.TXT|MOACS": {
-    "M1_avg": 0.6,
-    "M2_avg": 0.2,
-    "M3_avg": Infinity,
-    "Error_avg": 0.2
+    "Spacing_avg": 936.7188819658543,
+    "Generational_Distance_avg": 1013.1448413126585,
+    "M3_Convergencia_Promedio_avg": 5010.118898582841,
+    "Error_Ratio_avg": 14.61871461871462,
+    "Tiempo_Promedio_s": 25.201122331619263
   },
   "TSP|instancias/tsp_kroac100.tsp.txt|SPEA": {
-    "M1_avg": 0.0,
-    "M2_avg": 0.0,
-    "M3_avg": 60322.19299720164,
-    "Error_avg": 0.0
+    "Spacing_avg": 0.0,
+    "Generational_Distance_avg": 56725.565305003314,
+    "M3_Convergencia_Promedio_avg": 180886.62416689418,
+    "Error_Ratio_avg": 0.0,
+    "Tiempo_Promedio_s": 29.45674705505371
   },
   "TSP|instancias/tsp_kroac100.tsp.txt|NSGA": {
-    "M1_avg": 0.0,
-    "M2_avg": 0.0,
-    "M3_avg": 171350.6315385331,
-    "Error_avg": 67.6
-  },
-  "TSP|instancias/tsp_kroac100.tsp.txt|M3AS": {
-    "M1_avg": 0.4,
-    "M2_avg": 0.2,
-    "M3_avg": 6480.427193034057,
-    "Error_avg": 0.2
-  },
-  "TSP|instancias/tsp_kroac100.tsp.txt|MOACS": {
-    "M1_avg": 0.0,
-    "M2_avg": 0.0,
-    "M3_avg": Infinity,
-    "Error_avg": 0.0
+    "Spacing_avg": 722.8013458478148,
+    "Generational_Distance_avg": 675.8072239291616,
+    "M3_Convergencia_Promedio_avg": 5827.755919764173,
+    "Error_Ratio_avg": 0.0,
+    "Tiempo_Promedio_s": 25.159638452529908
   }
 }

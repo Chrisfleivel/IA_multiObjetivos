@@ -1,5 +1,17 @@
 # utilidades/pareto.py
 
+import json
+import numpy as np
+
+def guardar_frente(frente, filepath):
+    def convertir_objetivos(obj):
+        return [int(x) if isinstance(x, (np.integer,)) else float(x) if isinstance(x, (np.floating,)) else x for x in obj]
+    with open(filepath, 'w') as f:
+        json.dump(
+            [{'objetivos': convertir_objetivos(sol['objetivos'])} for sol in frente],
+            f, indent=2
+        )
+
 def es_dominado(obj1, obj2):
     """
     Devuelve True si obj2 domina a obj1 (minimización).

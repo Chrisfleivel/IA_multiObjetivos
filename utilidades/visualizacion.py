@@ -33,33 +33,21 @@ def graficar_frente_pareto(frente, titulo="Frente de Pareto", xlabel="Objetivo 1
         plt.show()
     plt.close()
 
-def graficar_varios_frentes(frentes, nombres, colores=None, titulo="Comparación de Frentes de Pareto", xlabel="Objetivo 1", ylabel="Objetivo 2", savepath=None):
-    """
-    Grafica varios frentes de Pareto en el mismo gráfico.
-    Args:
-        frentes (list): Lista de listas de soluciones (cada una con 'objetivos').
-        nombres (list): Lista de nombres para cada frente.
-        colores (list): Lista de colores para cada frente.
-        titulo (str): Título del gráfico.
-        xlabel (str): Etiqueta del eje X.
-        ylabel (str): Etiqueta del eje Y.
-        savepath (str): Si se especifica, guarda la figura en esa ruta.
-    """
-    plt.figure(figsize=(7,5))
-    if colores is None:
-        colores = ['b', 'r', 'g', 'm', 'c', 'y', 'k']
-    for i, frente in enumerate(frentes):
-        if not frente:
-            continue
-        x = [sol['objetivos'][0] for sol in frente]
-        y = [sol['objetivos'][1] for sol in frente]
-        plt.scatter(x, y, c=colores[i % len(colores)], marker='o', label=nombres[i])
+    
+
+def graficar_varios_frentes(frentes, nombres, titulo="", ruta_salida=None):
+    plt.figure()
+    for frente, nombre in zip(frentes, nombres):
+        xs = [sol['objetivos'][0] for sol in frente]
+        ys = [sol['objetivos'][1] for sol in frente]
+        plt.scatter(xs, ys, label=nombre)
     plt.title(titulo)
-    plt.xlabel(xlabel)
-    plt.ylabel(ylabel)
-    plt.grid(True)
+    plt.xlabel("Objetivo 1")
+    plt.ylabel("Objetivo 2")
     plt.legend()
-    if savepath:
-        plt.savefig(savepath, bbox_inches='tight')
-    plt.show()
+    plt.tight_layout()
+    if ruta_salida:
+        plt.savefig(ruta_salida)
+    else:
+        plt.show()
     plt.close()

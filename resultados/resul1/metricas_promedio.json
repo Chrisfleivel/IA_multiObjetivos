@@ -1,0 +1,30 @@
+{
+  "TSP|instancias/tsp_KROAB100.TSP.TXT|SPEA": {
+    "Spacing_avg": 709.9805998012048,
+    "Generational_Distance_avg": 30035.205502197066,
+    "M3_Convergencia_Promedio_avg": 167567.312729521,
+    "Error_Ratio_avg": 0.0,
+    "Tiempo_Promedio_s": 29.3948637008667
+  },
+  "TSP|instancias/tsp_KROAB100.TSP.TXT|NSGA": {
+    "Spacing_avg": 767.0892959046646,
+    "Generational_Distance_avg": 414.4931225125548,
+    "M3_Convergencia_Promedio_avg": 2912.7953502045248,
+    "Error_Ratio_avg": 23.20614035087719,
+    "Tiempo_Promedio_s": 12.54151692390442
+  },
+  "TSP|instancias/tsp_kroac100.tsp.txt|SPEA": {
+    "Spacing_avg": 0.0,
+    "Generational_Distance_avg": 42033.32514438708,
+    "M3_Convergencia_Promedio_avg": 173032.77950241772,
+    "Error_Ratio_avg": 0.0,
+    "Tiempo_Promedio_s": 32.530601787567136
+  },
+  "TSP|instancias/tsp_kroac100.tsp.txt|NSGA": {
+    "Spacing_avg": 723.5856816224789,
+    "Generational_Distance_avg": 643.8449719375972,
+    "M3_Convergencia_Promedio_avg": 4792.679226154597,
+    "Error_Ratio_avg": 0.2702702702702703,
+    "Tiempo_Promedio_s": 13.696390771865845
+  }
+}

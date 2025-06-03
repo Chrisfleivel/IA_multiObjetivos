@@ -13,7 +13,7 @@ from algoritmos.moaco.m3as import M3AS
 from algoritmos.moaco.moacs import MOACS
 
 from utilidades.pareto import union_frentes
-from utilidades.metricas import calcular_m1, calcular_m2, calcular_m3, calcular_error
+from utilidades.metrica2 import calcular_m1, calcular_m2, calcular_m3, calcular_error
 from utilidades.visualizacion import graficar_frente_pareto, graficar_varios_frentes
 
 # Configuración general
@@ -38,16 +38,19 @@ PROBLEMAS = {
 ALGORITMOS = {
     'SPEA': SPEA,
     'NSGA': NSGA,
-    'M3AS': M3AS,
-    'MOACS': MOACS
 }
+
+#    'M3AS': M3AS,
+#    'MOACS': MOACS
 
 PARAMS_ALGORITMOS = {
     'SPEA': {'tam_poblacion': 80, 'tam_archivo': 40, 'num_generaciones': 100, 'prob_crossover': 0.9, 'prob_mutacion': 0.1, 'k_vecinos_densidad': 5},
     'NSGA': {'tam_poblacion': 80, 'num_generaciones': 100, 'prob_crossover': 0.9, 'prob_mutacion': 0.1},
-    'M3AS': {'num_hormigas': 50, 'num_iteraciones': 100, 'rho': 0.2, 'tau_min': 0.01, 'tau_max': 10.0, 'alpha': 1.0, 'beta': 2.0},
-    'MOACS': {'num_hormigas': 50, 'num_iteraciones': 100, 'rho': 0.2, 'phi': 0.1, 'tau0': 1.0, 'alpha': 1.0, 'beta': 2.0, 'q0': 0.9}
 }
+
+#    'M3AS': {'num_hormigas': 50, 'num_iteraciones': 100, 'rho': 0.2, 'tau_min': 0.01, 'tau_max': 10.0, 'alpha': 1.0, 'beta': 2.0},
+#    'MOACS': {'num_hormigas': 50, 'num_iteraciones': 100, 'rho': 0.2, 'phi': 0.1, 'tau0': 1.0, 'alpha': 1.0, 'beta': 2.0, 'q0': 0.9}
+
 
 def guardar_frente(frente, filepath):
     import json
